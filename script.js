@@ -11,7 +11,7 @@ function calcul_date() {
     var m = date.substr(3,2);
     var s = date.substr(6,2);
     var string = "Số ngày đợi thiệp mời cưới của bạn Mai: " + date_since + " ngày " + (h - date_since * 24) + " giờ " + m + " phút " + s + " giây";
-    console.log(string);
+    // console.log(string);
     document.getElementById("display").innerHTML = string;
 }   
 
