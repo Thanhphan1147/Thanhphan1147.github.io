@@ -4,13 +4,13 @@ Design by TEMPLATED
 http://templated.co
 Released for free under the Creative Commons Attribution License
 
-Name       : StoneWork 
+Name       : StoneWork
 Description: A two-column, fixed-width design with dark color scheme.
 Version    : 1.0
 Released   : 20140228
 
 -->
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title></title>
@@ -21,25 +21,24 @@ Released   : 20140228
 <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
 
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
+<script type = "text/javascript" src="script.js"></script>
 </head>
-<body>
+<body onload="">
 <div id="header-wrapper">
 	<div id="banner" class="container">
 		<div class="title">
 			<h2 id="display"></h2>
 		</div>
+	</div>
 </div>
 <div id="wrapper">
-	<div id="three-column" class="container">
-	</div>
-</div>
-<div id="welcome">
 	<div class="container">
+		<img id="shiba" src="" alt="Click on the button to get a random picture"/>
 	</div>
-</div>
-<div id="copyright" class="container">
-	<p>&copy; Untitled. All rights reserved. | Photos by <a href="http://fotogrph.com/">Fotogrph</a> | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+	<button class="btn btn-primary" onclick="shiba()">Click!</button>
 </div>
 <script src="script.js"></script>
 </body>
