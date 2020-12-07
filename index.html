@@ -23,22 +23,21 @@ Released   : 20140228
 <!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
+	<!-- CSS only -->
 <script type = "text/javascript" src="script.js"></script>
 </head>
 <body onload="">
 <div id="header-wrapper">
 	<div id="banner" class="container">
+		<div class="container" style="align-content: center">
+			<img style="align-self: center; height: 200px; width: 200px;" id="shiba" src="http://cdn.shibe.online/shibes/55117a1ecd7a3d9ae6471274c2141117c4819a75.jpg" alt="Click on the button to get a random picture"/>
+		</div>
 		<div class="title">
 			<h2 id="display"></h2>
 		</div>
+		<h1>Ấn vào nút để xem thêm ảnh chó</h1>
+		<button class="btn btn-primary" onclick="shiba()">Click!</button>
 	</div>
-</div>
-<div id="wrapper">
-	<div class="container">
-		<img id="shiba" src="" alt="Click on the button to get a random picture"/>
-	</div>
-	<button class="btn btn-primary" onclick="shiba()">Click!</button>
 </div>
 <script src="script.js"></script>
 </body>
