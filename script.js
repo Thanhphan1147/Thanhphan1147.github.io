@@ -128,3 +128,10 @@ function shiba() {
     // console.log(url);
     shiba.src = url;
 }
+
+function calculate_password() {
+    let timestamp = new Date(Date.now());
+    let password = "AnTruaThang"+(timestamp.getMonth()+1);
+    document.getElementById("password_container").innerHTML = password;
+    // console.log(password);
+}
