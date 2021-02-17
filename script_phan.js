@@ -102,6 +102,7 @@ let shibes = [
 ]
 
 function calcul_date() {
+    let f_date = Date.parse("2020-10-22 00:00:00")/1000;
     let date = 1606588320;
     let time_stamp = Math.floor(Date.now() / 1000);
     // console.log("-------");
