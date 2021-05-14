@@ -121,7 +121,7 @@ function calcul_date() {
 }
 
 function calculate_date() {
-    var startDateTime = new Date(2020,9,22,0,0,0,0);
+    var startDateTime = new Date(2020,9,22,23,14,0,0);
     var startStamp = startDateTime.getTime();
     var newDate = new Date();
     var newStamp = newDate.getTime();
