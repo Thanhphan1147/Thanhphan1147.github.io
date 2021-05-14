@@ -120,7 +120,26 @@ function calcul_date() {
     document.getElementById("display").innerHTML = string;
 }
 
-setInterval(calcul_date, 1000);
+function calculate_date() {
+    var startDateTime = new Date(2020,0,9,22,0,0,0);
+    var startStamp = startDateTime.getTime();
+    var newDate = new Date();
+    var newStamp = newDate.getTime();
+    var diff = Math.round((newStamp-startStamp)/1000);
+    
+    var d = Math.floor(diff/(24*60*60));
+    diff = diff-(d*24*60*60);
+    var h = Math.floor(diff/(60*60));
+    diff = diff-(h*60*60);
+    var m = Math.floor(diff/(60));
+    diff = diff-(m*60);
+    var s = diff;
+    
+    let string = "Số ngày đợi thiệp mời cưới của bạn Mai: " + d + " ngày " + (h) + " giờ " + m + " phút " + s + " giây";
+    document.getElementById("display").innerHTML = string;
+}
+
+setInterval(calculate_date, 1000);
 
 function shiba() {
     let shiba = document.getElementById("shiba");
