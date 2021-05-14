@@ -155,3 +155,9 @@ function calculate_password() {
     document.getElementById("password_container").innerHTML = password;
     // console.log(password);
 }
+
+function motd() {
+    let url = "http://tphan.tech/motd";
+    let motd_html = document.getElementById("motd_html");
+    motd_html.src = url;
+}
