@@ -161,3 +161,9 @@ function motd() {
     let motd_html = document.getElementById("motd_html");
     motd_html.src = url;
 }
+
+function force_update_lol() {
+    let url = "http://tphan.tech/motd";
+    let motd_html = document.getElementById("motd_html");
+    motd_html.src = url;
+}
